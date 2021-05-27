@@ -8,3 +8,10 @@
     position: fixed;
     bottom: 34px;
 }
+#members {
+    background-color: lightcyan;
+    width: 150px;
+    position: fixed;
+    right: 0;
+    padding: 10px;
+}
