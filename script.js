@@ -11,3 +11,8 @@ input.onkeyup = function(event) {
         input.value = ''
     }
 }
+
+async function getMessages() {
+    console.log('Start getting messages from server')
+}
+getMessages()
