@@ -14,5 +14,7 @@ input.onkeyup = function(event) {
 
 async function getMessages() {
     console.log('Start getting messages from server')
+    const messages = await fetchGET('https://app.koodikool.ee/sdb/chatapp-messages')
+    console.log(messages)
 }
 getMessages()
