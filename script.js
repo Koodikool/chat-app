@@ -22,6 +22,11 @@ async function getMessages() {
         const messageHTML = '<p>' + message.user + ': ' + message.message + '</p>'
         messagesDiv.innerHTML = messagesDiv.innerHTML + messageHTML
     }
+    const members = []
+    for (const message of messages) {
+        members.push(message.user)
+    }
+    console.log(members)
 }
 getMessages()
 const fetchDelayMilliseconds = 5000
