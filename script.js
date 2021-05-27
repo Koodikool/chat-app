@@ -23,3 +23,5 @@ async function getMessages() {
     }
 }
 getMessages()
+const fetchDelayMilliseconds = 5000
+setInterval(getMessages, fetchDelayMilliseconds)
