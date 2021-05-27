@@ -17,6 +17,7 @@ input.onkeyup = function(event) {
 
 async function getMessages() {
     const messages = await fetchGET('https://app.koodikool.ee/sdb/chatapp-messages')
+    messagesDiv.innerHTML = ''
     for (const message of messages) {
         const messageHTML = '<p>' + message.user + ': ' + message.message + '</p>'
         messagesDiv.innerHTML = messagesDiv.innerHTML + messageHTML
