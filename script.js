@@ -18,6 +18,8 @@ async function getMessages() {
     console.log(messages)
     for (const message of messages) {
         console.log(message)
+        const messageHTML = '<p>' + message.user + ': ' + message.message + '</p>'
+        console.log(messageHTML)
     }
 }
 getMessages()
