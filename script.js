@@ -10,7 +10,7 @@ input.onkeyup = function(event) {
             user: nameInput.value,
             message: input.value
         }
-
+        fetchPOST('https://app.koodikool.ee/sdb/chatapp-messages', data)
         input.value = ''
     }
 }
