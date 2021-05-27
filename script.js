@@ -13,5 +13,6 @@ input.onkeyup = function(event) {
         const newMessage = '<p>' + input.value + '</p>'
         console.log(newMessage)
         messagesDiv.innerHTML = messagesDiv.innerHTML + newMessage
+        input.value = ''
     }
 }
