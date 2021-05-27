@@ -6,8 +6,9 @@ input.focus()
 
 input.onkeyup = function(event) {
     if (event.key === 'Enter') {
-        const newMessage = '<p>' + nameInput.value + ': ' + input.value + '</p>'
-        messagesDiv.innerHTML = messagesDiv.innerHTML + newMessage
+        // Delete this line: const newMessage = '<p>' + nameInput.value + ': ' + input.value + '</p>'
+        // Delete this line: messagesDiv.innerHTML = messagesDiv.innerHTML + newMessage
+        // Delete these lines only in the `input.onkeyup` function!
         input.value = ''
     }
 }
