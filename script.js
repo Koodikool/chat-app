@@ -1,5 +1,6 @@
 
 const input = document.querySelector('#write')
+input.focus()
 
 input.onkeyup = function(event) {
     if (event.key === 'Enter') {
