@@ -27,6 +27,13 @@ async function getMessages() {
         members.push(message.user)
     }
     console.log(members)
+
+    let membersHTML = ''
+    for (const newMember of members) {
+        const newMemberHTML = '<p>' + newMember + '</p>'
+        membersHTML = membersHTML + newMemberHTML
+    }
+    console.log(membersHTML)
 }
 getMessages()
 const fetchDelayMilliseconds = 5000
