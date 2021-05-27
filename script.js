@@ -16,5 +16,8 @@ async function getMessages() {
     console.log('Start getting messages from server')
     const messages = await fetchGET('https://app.koodikool.ee/sdb/chatapp-messages')
     console.log(messages)
+    for (const message of messages) {
+        console.log(message)
+    }
 }
 getMessages()
