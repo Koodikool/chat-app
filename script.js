@@ -2,6 +2,7 @@
 const input = document.querySelector('#write')
 const nameInput = document.querySelector('#name')
 const messagesDiv = document.querySelector('#messages')
+const membersDiv = document.querySelector('#members')
 input.focus()
 
 input.onkeyup = function(event) {
@@ -34,6 +35,7 @@ async function getMessages() {
         membersHTML = membersHTML + newMemberHTML
     }
     console.log(membersHTML)
+    membersDiv.innerHTML = membersHTML
 }
 getMessages()
 const fetchDelayMilliseconds = 5000
