@@ -25,7 +25,9 @@ async function getMessages() {
     }
     const members = []
     for (const message of messages) {
-        members.push(message.user)
+        if (!members.includes(message.user)) {
+            members.push(message.user)
+        }
     }
     console.log(members)
 
