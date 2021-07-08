@@ -36,6 +36,7 @@ async function getMessages() {
         membersHTML = membersHTML + newMemberHTML
     }
     membersDiv.innerHTML = membersHTML
+    window.scrollTo(0, document.body.scrollHeight);
 }
 getMessages()
 const fetchDelayMilliseconds = 5000
